@@ -86,7 +86,7 @@ tabs.forEach(tab => {
     tab.addEventListener('click', () => {
         // dataset 객체를 통해 data 속성을 가져오기 위해서는 속성 이름의 data- 뒷 부분을 사용
         const target = document.querySelector(tab.dataset.target)
-        console.log(tab)
+        console.log(target)
 
         tabContents.forEach(tabContent => {
             // step 1. 우선 모든 dataset ID 제거
@@ -95,6 +95,11 @@ tabs.forEach(tab => {
         // step 2. 클릭한 주체의 엘리먼트만 ID 다시 추가
         target.classList.add('qualification__active')
 
+        tabs.forEach(tab => {
+            tab.classList.remove('qualification__active') 
+        })
+
+        tab.classList.add('qualification__active')
     })
 })
 
@@ -125,3 +130,21 @@ modalCloses.forEach((modalClose) => {
         })
     })
 })
+
+
+
+
+
+/* ============== PORTFOLIO SWIPER =============== */ 
+let swiper = new Swiper(".portfolio__container", {
+    cssMode: true,
+    loop: true,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+});
