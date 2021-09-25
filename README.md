@@ -41,4 +41,34 @@
     * forEach 메서드 내부 함수 호출로 해당 오소 모달창 실행
     * x버튼 클릭시 모달창 종료 
 
+    <br></br>
+    <br></br>
+    
+  - Testimonial point
+ 
+    ![Testmonial](https://user-images.githubusercontent.com/78064720/134775095-1513fa85-b8e5-4677-88c4-007bcc4ac120.gif)
+    
+    * Swiper 엔진을 통한 UI 구현
+     
+     ```js
+     
+      let swiperTestimodial = new Swiper(".testimonial__container", {
+        loop: true,
+        grabCursor: true,
+        spaceBetween: 48,
 
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+          dynamicBullets: true,
+        },
+        breakpoints:{
+         568:{
+          slidesPerView:2,
+        }
+      }
+      });
+     
+     ```
+
+    
