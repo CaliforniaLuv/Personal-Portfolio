@@ -1,4 +1,4 @@
-https://californialuv.github.io/Personal-Portfolio/
+https://californialuv.github.io/Personal-Portfolio/index.html
 
 
 # 9.11 List menu, Skill bar point, Qualification point
